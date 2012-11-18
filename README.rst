@@ -21,14 +21,17 @@ Bitter uses `Redis <http://redis.io>`_ (version >=2.6).
 Configuration
 -------------
 If you want to use the default values:
+
 .. code-block:: yaml
 
     rezzza_bitter: ~
 
 Default values are:
+
 * redis_client: snc_redis.default_client
 
 If you want to use custom values:
+
 .. code-block:: yaml
 
     rezzza_bitter:
