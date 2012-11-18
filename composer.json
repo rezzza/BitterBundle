@@ -1,0 +1,36 @@
+{
+    "name": "rezzza/bitter-bundle",
+    "description": "Implements a powerful analytics Symfony Bundle based on Bitter library using Redis bitmaps",
+    "keywords": ["bitter", "symfony", "bundle", "analytics", "redis"],
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/rezzza/BitterBundle",
+    "license": "MIT",
+    "authors": [{
+        "name": "Jérémy Romey",
+        "email": "jeremy@free-agent.fr"
+    },{
+        "name": "Community contributors",
+        "homepage": "https://github.com/rezzza/BitterBundle/contributors"
+    }],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "2.1.*",
+        "free-agent/bitter": "dev-master"
+    },
+    "require-dev": {
+        "mageekguy/atoum": "dev-master"
+    },
+    "autoload":     {
+        "psr-0": { "Rezzza\\BitterBundle": "" }
+    },
+    "target-dir": "Rezzza/BitterBundle",
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
