@@ -20,7 +20,13 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->scalarNode('redis_client')->defaultValue('snc_redis.default_client')->end()
+                ->scalarNode('redis_client')
+                    ->validate()
+                        ->ifTrue(function($v) { return empty($v); })
+                        ->thenInvalid('The "redis_client" option must be set')
+                    ->end()
+                    ->defaultValue('snc_redis.default_client')
+                ->end()
             ->end()
         ;
     }
