@@ -20,6 +20,10 @@
     "require-dev": {
         "mageekguy/atoum": "dev-master"
     },
+    "suggest": {
+        "snc/redis-bundle": "Redis bundle for Symfony 2",
+        "ext-phpredis": "Redis C extension for PHP"
+    },
     "autoload":     {
         "psr-0": { "Rezzza\\BitterBundle": "" }
     },
@@ -27,5 +31,10 @@
     "minimum-stability": "dev",
     "config": {
         "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
