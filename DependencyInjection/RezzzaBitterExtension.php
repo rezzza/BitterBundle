@@ -1,6 +1,6 @@
 <?php
 
-namespace Rezzza\Bundle\BitterBundle\DependencyInjection;
+namespace Rezzza\BitterBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
