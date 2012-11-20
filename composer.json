@@ -18,7 +18,7 @@
         "free-agent/bitter": "dev-master"
     },
     "require-dev": {
-        "mageekguy/atoum": "dev-master"
+        "atoum/atoum-bundle": "dev-master"
     },
     "suggest": {
         "snc/redis-bundle": "Redis bundle for Symfony 2",
