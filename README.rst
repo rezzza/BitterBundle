@@ -2,6 +2,7 @@ BitterBundle Documentation
 ==========================
 
 .. image:: https://secure.travis-ci.org/rezzza/BitterBundle.png?branch=master
+  :target: http://travis-ci.org/rezzza/BitterBundle
 
 BitterBundle is a powerful analytics Symfony Bundle based on `Bitter <https://github.com/jeremyFreeAgent/Bitter/>`_ library using Redis bitmaps.
 
