@@ -1,6 +1,6 @@
 <?php
 
-namespace Rezzza\Bundle\BitterBundle\Bitter;
+namespace Rezzza\BitterBundle\Bitter;
 
 /**
  * @author Jérémy Romey <jeremy@free-agent.fr>
