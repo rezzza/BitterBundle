@@ -6,7 +6,7 @@
 
     <services>
         <service id="rezzza.bitter" class="%rezzza.bitter.class%">
-            <argument type="service" id="%rezzza.bitter.redis_client%" />
+            <argument type="service" id="rezzza.bitter.redis_client" />
         </service>
     </services>
 

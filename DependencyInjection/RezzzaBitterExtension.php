@@ -20,7 +20,7 @@ class RezzzaBitterExtension extends Extension
         $configuration = new Configuration();
         $config        = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('rezzza_bitter.redis_client', $config['redis_client']);
+        $container->setAlias('rezzza_bitter.redis_client', $config['redis_client']);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('bitter.xml');
