@@ -1,6 +1,6 @@
 <?php
 
-namespace Rezzza\Bundle\BitterBundle\DependencyInjection;
+namespace Rezzza\BitterBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
