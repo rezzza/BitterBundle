@@ -7,5 +7,4 @@ namespace Rezzza\Bundle\BitterBundle\Bitter;
  */
 class Bitter extends FreeAgent\Bitter\Bitter
 {
-
 }

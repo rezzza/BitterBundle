@@ -1,9 +1,6 @@
 BitterBundle Documentation
 ==========================
 
-.. image:: https://secure.travis-ci.org/rezzza/BitterBundle.png?branch=master
-   :target: http://travis-ci.org/rezzza/BitterBundle
-
 BitterBundle is a powerful analytics Symfony Bundle based on `Bitter <https://github.com/jeremyFreeAgent/Bitter/>`_ library using Redis bitmaps.
 
 .. note::
@@ -20,22 +17,20 @@ Bitter uses `Redis <http://redis.io>`_ (version >=2.6).
 
 Configuration
 -------------
-If you want to use the default values:
 
-.. code-block:: yaml
-
-    rezzza_bitter: ~
-
-Default values are:
-
-* redis_client: snc_redis.default_client
-
-If you want to use custom values:
+Using `SncRedisBundle <https://github.com/snc/SncRedisBundle>`_ redis client:
 
 .. code-block:: yaml
 
     rezzza_bitter:
-      redis_client: your.very.best.redis.client
+        redis_client: snc_redis.default_client
+
+Using custom redis client:
+
+.. code-block:: yaml
+
+    rezzza_bitter:
+        redis_client: your.very.best.redis.client
 
 Basic usage
 -----------
@@ -58,3 +53,4 @@ Mark user 404 as active and has been kicked by Chuck Norris:
 Todo
 ----
 * Add dashboard controller.
+* Add tests

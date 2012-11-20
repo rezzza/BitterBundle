@@ -16,16 +16,12 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('rezzza_bitter');
 
-        $rootNode
+        $treeBuilder->root('rezzza_bitter')
             ->children()
                 ->scalarNode('redis_client')
-                    ->validate()
-                        ->ifTrue(function($v) { return empty($v); })
-                        ->thenInvalid('The "redis_client" option must be set')
-                    ->end()
-                    ->defaultValue('snc_redis.default_client')
+                    ->isRequired()
+                    ->cannotBeEmpty()
                 ->end()
             ->end()
         ;
