@@ -18,11 +18,7 @@ class RezzzaBitterExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $configuration = new Configuration();
-        $config = $this->processConfiguration($configuration, $configs);
-
-        if (!isset($config['redis_client'])) {
-            throw new \InvalidArgumentException('The "redis_client" option must be set');
-        }
+        $config        = $this->processConfiguration($configuration, $configs);
 
         $container->setParameter('rezzza_bitter.redis_client', $config['redis_client']);
 
