@@ -9,14 +9,13 @@ BitterBundle is a powerful analytics Symfony Bundle based on `Bitter <https://gi
 .. note::
     Please look at `Bitter <https://github.com/jeremyFreeAgent/Bitter/>`_ for more info about what it can do.
 
+Please see `Bitter <http://bitter.free-agent.fr/>`_  for more info and documentation about this project.
+
 Installation
 ------------
 Use `Composer <https://github.com/composer/composer/>`_ to install: `rezzza/bitter-bundle`.
 
 Bitter uses `Redis <http://redis.io>`_ (version >=2.6).
-
-.. note::
-    Every keys created in `Redis` will be prefixed by `bitter_`.
 
 Configuration
 -------------
