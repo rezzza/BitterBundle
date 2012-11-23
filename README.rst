@@ -15,6 +15,22 @@ Installation
 ------------
 Use `Composer <https://github.com/composer/composer/>`_ to install: `rezzza/bitter-bundle`.
 
+In your `composer.json` you should have:
+
+.. code-block:: yaml
+
+    {
+        "require": {
+            "rezzza/bitter-bundle": "*"
+        }
+    }
+
+Then update your `AppKernel.php` to register the bundle with:
+
+.. code-block:: php
+
+    new Rezzza\BitterBundle\RezzzaBitterBundle()
+
 Bitter uses `Redis <http://redis.io>`_ (version >=2.6).
 
 Configuration
