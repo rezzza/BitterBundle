@@ -50,6 +50,18 @@ Using custom redis client:
     rezzza_bitter:
         redis_client: your.very.best.redis.client
 
+You can also configure custom values for `prefix_key` and `expire_timeout`:
+
+.. code-block:: yaml
+
+    rezzza_bitter:
+        redis_client: snc_redis.default
+        prefix_key: jack_bauer
+        expire_timeout: 404
+
+.. note::
+    Default values for `prefix_key` and `expire_timeout` are **bitter** and **60**.
+
 Basic usage
 -----------
 Get Bitter:

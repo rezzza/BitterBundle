@@ -4,12 +4,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <parameters>
-        <parameter key="rezzza.bitter.class">Rezzza\BitterBundle\Bitter\Bitter</parameter>
+        <parameter key="rezzza_bitter.class">Rezzza\BitterBundle\Bitter\Bitter</parameter>
     </parameters>
 
     <services>
-        <service id="rezzza.bitter" class="%rezzza.bitter.class%">
+        <service id="rezzza.bitter" class="%rezzza_bitter.class%">
             <argument type="service" id="rezzza_bitter.redis_client" />
+            <argument>%rezzza_bitter.prefix_key%</argument>
+            <argument>%rezzza_bitter.expire_timeout%</argument>
         </service>
     </services>
 
