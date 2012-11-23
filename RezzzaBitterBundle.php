@@ -1,6 +1,6 @@
 <?php
 
-namespace Rezzza\Bundle\BitterBundle;
+namespace Rezzza\BitterBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
