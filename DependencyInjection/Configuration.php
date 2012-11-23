@@ -23,6 +23,12 @@ class Configuration implements ConfigurationInterface
                     ->isRequired()
                     ->cannotBeEmpty()
                 ->end()
+                ->scalarNode('prefix_key')
+                    ->defaultValue('bitter')
+                ->end()
+                ->scalarNode('expire_timeout')
+                    ->defaultValue(60)
+                ->end()
             ->end()
         ;
 
