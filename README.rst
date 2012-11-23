@@ -25,7 +25,7 @@ Using `SncRedisBundle <https://github.com/snc/SncRedisBundle>`_ redis client:
 .. code-block:: yaml
 
     rezzza_bitter:
-        redis_client: snc_redis.default_client
+        redis_client: snc_redis.default
 
 Using custom redis client:
 
