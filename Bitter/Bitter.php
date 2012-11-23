@@ -9,4 +9,8 @@ use FreeAgent\Bitter\Bitter as BaseBitter;
  */
 class Bitter extends BaseBitter
 {
+    public function __construct($redisClient, $prefixKey, $expireTimeout)
+    {
+        parent:: __construct($redisClient, $prefixKey . ':', $prefixKey . '_temp:', $expireTimeout);
+    }
 }
