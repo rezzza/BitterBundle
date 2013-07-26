@@ -4,7 +4,10 @@ BitterBundle Documentation
 .. image:: https://secure.travis-ci.org/rezzza/BitterBundle.png?branch=master
   :target: http://travis-ci.org/rezzza/BitterBundle
 
-BitterBundle makes it easy to use the `Bitter library <https://github.com/jeremyFreeAgent/Bitter/>`_ to implement real-time 
+.. image:: https://insight.sensiolabs.com/projects/15882c8a-0875-4153-bc00-603e7cee2ab0/mini.png
+  :target: https://insight.sensiolabs.com/projects/15882c8a-0875-4153-bc00-603e7cee2ab0
+
+BitterBundle makes it easy to use the `Bitter library <https://github.com/jeremyFreeAgent/Bitter/>`_ to implement real-time
 highly-scalable analytics using Redis bitmaps in your Symfony 2 project. Please see the `Bitter library website <http://bitter.free-agent.fr/>`_  for more info and documentation about this project.
 
 Installation
